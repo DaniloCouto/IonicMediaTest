@@ -1,0 +1,18 @@
+<ion-view title="Teste">
+	<ion-content>
+		<ion-list>
+				<ion-item class="item-divider item-icon-left">
+					<i class="icon ion-music-note"></i>
+					Ringtones
+				</ion-item>
+			  	<ion-item ng-repeat="item in items" class="item-button-right">
+					    {{item.name}}
+						<div class="buttons">
+							<i class="icon button-icon ion-play" ng-click="playSound(item)"></i>
+							<i class="icon button-icon ion-pause" ng-click="pauseSound(item)"></i>
+						</div>
+			  	</ion-item>
+			</ion-list>
+			<button class="button-balanced bar"></button>
+    </ion-content>
+</ion-view>
